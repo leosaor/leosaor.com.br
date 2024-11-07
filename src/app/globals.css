@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-transparent {
+  background-color: white;
+  border: 0;
+  padding-bottom: 0;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.dark {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --secondary-text-color: #b3b3b3;
+  --divider-color: #3a3a3a;
+}
+
+
+.dark html,
+.dark body,
+.dark .home,
+.dark .ant-layout,
+.dark .ant-row,
+.dark .ant-col {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.dark .portfolio-card,
+.dark .experience-card {
+  background-color: var(--card-bg) !important;
+}
+
+.dark .portfolio-card .ant-card-head,
+.dark .experience-card .ant-card-head {
+  background-color: var(--bg-color) !important;
+}
+
+.dark .social-media-icon,
+.dark .page-paragraph,
+.dark .ant-card-head-title,
+.dark .tech-tag,
+.dark .download-profile-button,
+.dark .profile-title,
+.dark .profile-subtitle {
+  color: var(--text-color) !important;
+}
+
+.dark .download-profile-button {
+  background-color: var(--bg-color) !important;
+  border-color: var(--bg-color) !important;
+}
+
+
+.dark #education .ant-card-head-title,
+.dark #education .ant-list-item-meta-title,
+.dark #education .ant-typography {
+  color: var(--text-color) !important;
+}
+
+.dark #education .ant-list-item-meta-description {
+  color: var(--secondary-text-color) !important;
+}
+
+
+.dark #education .ant-list-item {
+  color: var(--text-color) !important; 
+}
+
+
+.dark .experience-card .ant-card-head-title,
+.dark .experience-card .ant-typography {
+  color: var(--text-color) !important;
+}
+
+
+.dark .experience-card .ant-typography-secondary {
+  color: var(--secondary-text-color) !important;
+}
+
+.dark .ant-divider {
+  border-top-color: var(--divider-color) !important;
+}
